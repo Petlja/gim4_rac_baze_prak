@@ -1,0 +1,88 @@
+courseId: courseID 
+lang: sr-Cyrl
+title: 
+description:
+  willLearn: 
+    - Preview of Petljadoc course
+  requirements:
+    - Petljadoc
+    - Runestone
+    - Sphinx
+  toc:
+    - Intro to Petljadoc INDEX.yaml
+  externalLinks:  
+    - text: Курс за четврти разред гимназије
+      href: https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html
+  longDescription: |
+    This is an example of a long description...
+  shortDescription: Практикум за четврти разред гимназије
+
+
+lessons:
+  - title: "Увод"
+    guid: ef300a61-9db8-4f67-bdb3-1390ae35f2cd
+    folder: Uvod
+    activities:
+      - type: reading
+        title: Пројекција и селекција
+        file: intro.rst
+        guid: c742f62a-ed6f-40be-85b7-73cd1bdb21ac
+  - title: "Пројекција и селекција"
+    guid: b6c3ffb3-bacf-4834-8845-4c8a23ea19c3
+    folder: Muzika1
+    activities:
+      - type: reading
+        title: Пројекција и селекција
+        file: 02_citanje_01e_proj_restr_zadaci_muzika.rst
+        guid: 24352c97-ea16-40ac-a679-9d3c6f6118d7
+  - title: "Логички и релацијски оператори"
+    guid: 5a6b452b-095a-4556-84ea-c7838b667eff
+    folder: Muzika2
+    activities:
+      - type: reading
+        title: Оператори
+        file: 02_citanje_02e_operatori_zadaci_muzika.rst
+        guid: 6357107a-d1d8-42b3-9db9-608d5c4a6edf
+  - title: "2.3 SQL: Сортирање, уклањање дупликата, ограничавање броја врста"
+    guid: 6145a536-594a-4d09-b0e9-47cd9092bfef
+    folder: Muzika3
+    activities:
+      - type: reading
+        title: Сортирање и ограничавање
+        file: 02_citanje_03e_izr_fun_zadaci_muzika.rst
+        guid: 4053ad94-6619-4798-a3cb-e85649edf232
+  - title: "2.4 SQL: Агрегатне функције и груписање"
+    guid: cc4d0cc2-80bf-4793-97af-8f3424b20516
+    folder: Muzika4
+    activities:
+      - type: reading
+        title: Агрегатне функције и груписање
+        file: 02_citanje_04f_sort_ogr_zadaci_muzika.rst
+        guid: fb620597-1bee-4b50-a803-7c1f4767a09d
+  - title: "2.5 SQL: Спајање табела"
+    guid: 5ea11fef-57bf-40f0-98eb-a88e78143a16
+    folder: Muzika5
+    activities:
+      - type: reading
+        title: Спајање
+        file: 02_citanje_05f_agregatne_zadaci_muzika.rst
+        guid: 547ef2c4-3ffb-4bcf-983e-5bdf015c4fdb
+  - title: "2.6 SQL: Угнежђени упити"
+    guid: c2bc3e81-7f1f-490a-ba2b-e1f05eed6e07
+    folder: Muzika6
+    activities:
+      - type: reading
+        title: Угнежђени упити 
+        file: 02_citanje_06g_spajanje_zadaci_muzika.rst
+        guid: be46c35f-3573-4648-8767-176a0dace01c
+  - title: "2.7 SQL: Изрази и функције"
+    guid: 64458543-fdb9-44f6-8474-e0c07c8523bf
+    folder: Muzika7
+    activities:
+      - type: reading
+        title: Изрази и функције
+        file: 02_citanje_07f_ugnezdjeni_zadaci_muzika.rst
+        guid: c4c4cd83-4741-46d9-9cf8-66d2da169232
+
+
+
