@@ -1,0 +1,155 @@
+courseId: iv-baze-praktikum
+description:
+  externalLinks:
+  - href: https://petlja.org/kurs/4654/
+    text: Базе података, рачунарске мреже и серверско веб програмирање за четврти
+      разред гимназије природни смер
+  longDescription: '<div class="document">
+
+    <p>Овај курс је намењен ученицима четвртог разреда гимназија природно-математичког
+    смера за предмет Рачунарство и информатика као додатак за самосталан рад и вежбање.
+    Курс прати део посвећен базама података одговарајућег курса за ученике под називом
+    „Базе података, рачунарске мреже и серверско веб програмирање за четврти разред
+    гимназије природни смер“.</p>
+
+    <blockquote>
+
+    &lt;p&gt;</blockquote>
+
+    <div class="system-message">
+
+    <p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">&lt;string&gt;</tt>,
+    line 4)</p>
+
+    Block quote ends without a blank line; unexpected unindent.</div>
+
+    <p>&lt;a rel=&quot;license&quot; href=&quot;<a class="reference external" href="https://creativecommons.org/licenses/by/4.0/deed.sr_LATN">https://creativecommons.org/licenses/by/4.0/deed.sr_LATN</a>&quot;&gt;
+
+    &lt;img alt=&quot;Creative Commons License&quot; style=&quot;border-width:0&quot;
+    src=&quot;https://i.creativecommons.org/l/by/4.0/88x31.png&quot; /&gt;&lt;/a&gt;
+
+    &lt;br /&gt;Овај курс Фондација Петља објавила je под лиценцом &lt;a rel=&quot;license&quot;
+    href=&quot;https://creativecommons.org/licenses/by/4.0/deed.sr_LATN&quot;&gt;Creative
+    Commons Autorstvo 4.0 Međunarodna Licenca (CC BY 4.0)&lt;/a&gt;.
+
+    &lt;/p&gt;</p>
+
+    </div>
+
+    '
+  requirements:
+  - Инсталиран програм SQLite studio (упутство за инсталацију је дато у склопу курса)
+  shortDescription: Практикум за четврти разред гимназије
+  toc:
+  - Intro to Petljadoc INDEX.yaml
+  willLearn:
+  - шта су и чему служе базе података на примеру базе података фиктивне компаније
+    за продају дигиталних композиција
+  - шта је и како се користи упитни језик SQL на примеру конкретне базе података
+lang: sr-Cyrl
+lessons:
+- activities:
+  - description: ''
+    file: intro.html
+    guid: c742f62a-ed6f-40be-85b7-73cd1bdb21ac
+    src: intro.rst
+    title: База података компаније за продају дигиталних композиција
+    type: reading
+  archived-activities: []
+  description: ''
+  folder: Uvod
+  guid: ef300a61-9db8-4f67-bdb3-1390ae35f2cd
+  normalized_title: База података компаније за продају дигиталних композиција
+  title: База података компаније за продају дигиталних композиција
+- activities:
+  - description: ''
+    file: 02_citanje_01e_proj_restr_zadaci_muzika.html
+    guid: 24352c97-ea16-40ac-a679-9d3c6f6118d7
+    src: 02_citanje_01e_proj_restr_zadaci_muzika.rst
+    title: Пројекција и селекција
+    type: reading
+  archived-activities: []
+  description: ''
+  folder: Muzika1
+  guid: b6c3ffb3-bacf-4834-8845-4c8a23ea19c3
+  normalized_title: Пројекција и селекција
+  title: Пројекција и селекција
+- activities:
+  - description: ''
+    file: 02_citanje_02e_operatori_zadaci_muzika.html
+    guid: 6357107a-d1d8-42b3-9db9-608d5c4a6edf
+    src: 02_citanje_02e_operatori_zadaci_muzika.rst
+    title: Оператори
+    type: reading
+  archived-activities: []
+  description: ''
+  folder: Muzika2
+  guid: 5a6b452b-095a-4556-84ea-c7838b667eff
+  normalized_title: Логички и релацијски оператори
+  title: Логички и релацијски оператори
+- activities:
+  - description: ''
+    file: 02_citanje_03e_izr_fun_zadaci_muzika.html
+    guid: 4053ad94-6619-4798-a3cb-e85649edf232
+    src: 02_citanje_03e_izr_fun_zadaci_muzika.rst
+    title: Сортирање и ограничавање
+    type: reading
+  archived-activities: []
+  description: ''
+  folder: Muzika3
+  guid: 6145a536-594a-4d09-b0e9-47cd9092bfef
+  normalized_title: 2.3 SQL Сортирање, уклањање дупликата, ограничавање броја врста
+  title: '2.3 SQL: Сортирање, уклањање дупликата, ограничавање броја врста'
+- activities:
+  - description: ''
+    file: 02_citanje_04f_sort_ogr_zadaci_muzika.html
+    guid: fb620597-1bee-4b50-a803-7c1f4767a09d
+    src: 02_citanje_04f_sort_ogr_zadaci_muzika.rst
+    title: Агрегатне функције и груписање
+    type: reading
+  archived-activities: []
+  description: ''
+  folder: Muzika4
+  guid: cc4d0cc2-80bf-4793-97af-8f3424b20516
+  normalized_title: 2.4 SQL Агрегатне функције и груписање
+  title: '2.4 SQL: Агрегатне функције и груписање'
+- activities:
+  - description: ''
+    file: 02_citanje_05f_agregatne_zadaci_muzika.html
+    guid: 547ef2c4-3ffb-4bcf-983e-5bdf015c4fdb
+    src: 02_citanje_05f_agregatne_zadaci_muzika.rst
+    title: Спајање
+    type: reading
+  archived-activities: []
+  description: ''
+  folder: Muzika5
+  guid: 5ea11fef-57bf-40f0-98eb-a88e78143a16
+  normalized_title: 2.5 SQL Спајање табела
+  title: '2.5 SQL: Спајање табела'
+- activities:
+  - description: ''
+    file: 02_citanje_06g_spajanje_zadaci_muzika.html
+    guid: be46c35f-3573-4648-8767-176a0dace01c
+    src: 02_citanje_06g_spajanje_zadaci_muzika.rst
+    title: Угнежђени упити
+    type: reading
+  archived-activities: []
+  description: ''
+  folder: Muzika6
+  guid: c2bc3e81-7f1f-490a-ba2b-e1f05eed6e07
+  normalized_title: 2.6 SQL Угнежђени упити
+  title: '2.6 SQL: Угнежђени упити'
+- activities:
+  - description: ''
+    file: 02_citanje_07f_ugnezdjeni_zadaci_muzika.html
+    guid: c4c4cd83-4741-46d9-9cf8-66d2da169232
+    src: 02_citanje_07f_ugnezdjeni_zadaci_muzika.rst
+    title: Изрази и функције
+    type: reading
+  archived-activities: []
+  description: ''
+  folder: Muzika7
+  guid: 64458543-fdb9-44f6-8474-e0c07c8523bf
+  normalized_title: 2.7 SQL Изрази и функције
+  title: '2.7 SQL: Изрази и функције'
+title: Базе података за четврти разред гимназије природни смер – практикум

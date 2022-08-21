@@ -1,30 +1,36 @@
-courseId: courseID 
+courseId: iv-baze-praktikum
 lang: sr-Cyrl
-title: SQL практикум за четврти разред гимназије
+title: Базе података за четврти разред гимназије природни смер – практикум
 description:
-  willLearn: 
-    - Preview of Petljadoc course
+  willLearn:
+    - шта су и чему служе базе података на примеру базе података фиктивне компаније за продају дигиталних композиција
+    - шта је и како се користи упитни језик SQL на примеру конкретне базе података
   requirements:
-    - Petljadoc
-    - Runestone
-    - Sphinx
+    - Инсталиран програм SQLite studio (упутство за инсталацију је дато у склопу курса)
   toc:
     - Intro to Petljadoc INDEX.yaml
   externalLinks:  
-    - text: Курс за четврти разред гимназије
-      href: https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html
+    - text: Базе података, рачунарске мреже и серверско веб програмирање за четврти разред гимназије природни смер
+      href: https://petlja.org/kurs/4654/
   longDescription: |
-    This is an example of a long description...
+    Овај курс је намењен ученицима четвртог разреда гимназија природно-математичког смера за предмет Рачунарство и информатика као додатак за самосталан рад и вежбање. Курс прати део посвећен базама података одговарајућег курса за ученике под називом „Базе података, рачунарске мреже и серверско веб програмирање за четврти разред гимназије природни смер“.
+
+        <p>
+    <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.sr_LATN">
+    <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+    <br />Овај курс Фондација Петља објавила je под лиценцом <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.sr_LATN">Creative Commons Autorstvo 4.0 Međunarodna Licenca (CC BY 4.0)</a>.
+    </p> 
+  
   shortDescription: Практикум за четврти разред гимназије
 
 
 lessons:
-  - title: "Увод"
+  - title: База података компаније за продају дигиталних композиција
     guid: ef300a61-9db8-4f67-bdb3-1390ae35f2cd
     folder: Uvod
     activities:
       - type: reading
-        title: Пројекција и селекција
+        title: База података компаније за продају дигиталних композиција
         file: intro.rst
         guid: c742f62a-ed6f-40be-85b7-73cd1bdb21ac
   - title: "Пројекција и селекција"
