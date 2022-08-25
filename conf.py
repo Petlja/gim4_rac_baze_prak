@@ -33,7 +33,7 @@ import petljadoc
 
 #petljadoc.runestone_ext.add_module('blockly')
 #petljadoc.runestone_ext.add_module('blockpylib')
-#petljadoc.runestone_ext.add_module('simanim')
+petljadoc.runestone_ext.add_module('simanim')
 #petljadoc.runestone_ext.add_module('pycode')
 #petljadoc.runestone_ext.add_module('p5js')
 petljadoc.runestone_ext.add_module('dbDirective')

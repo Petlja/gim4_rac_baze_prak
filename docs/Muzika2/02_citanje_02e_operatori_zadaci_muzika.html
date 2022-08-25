@@ -6,6 +6,7 @@
     <title>Логички и релацијски оператори – музика</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -27,6 +28,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
     <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
     <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
     <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
@@ -109,6 +111,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -124,6 +127,8 @@
     <script type="text/javascript" src="../_static/jszip.js"></script>
     <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/simanim.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
     <script type="text/javascript" src="../_static/dbDirective.js"></script>
     <script type="text/javascript" src="../_static/sql.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
@@ -327,15 +332,13 @@
 <p>Савет је да се у прозору <code class="docutils literal notranslate"><span class="pre">Databases</span></code> увек прво провере тачни називи табела.</p>
 <a class="reference internal image-reference" href="../_images/music21.png"><img alt="../_images/music21.png" class="align-center" src="../_images/music21.png" style="width: 300px;" /></a>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Приказати податке о песмама које заузимају више од 10 милиона бајтова.</p>
 
-    </p></div></div>
+    </div></div>
 <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="o">*</span>
 <span class="k">FROM</span> <span class="n">kompozicija</span>
 <span class="k">WHERE</span> <span class="n">velicina</span> <span class="o">&gt;=</span> <span class="mi">10000000</span><span class="p">;</span>
@@ -422,15 +425,13 @@
 </tbody>
 </table>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Приказати називе песама које су краће од 3 минута тј. 180000 милисекунди.</p>
 
-    </p></div></div>
+    </div></div>
 <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">naziv</span>
 <span class="k">FROM</span> <span class="n">kompozicija</span>
 <span class="k">WHERE</span> <span class="n">trajanje</span> <span class="o">&lt;</span> <span class="mi">180000</span><span class="p">;</span>
@@ -461,16 +462,14 @@
 </tbody>
 </table>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Приказати називе песама које трају између 3 минута и 4 минута
 (тј. између 180000 и 240000 милисекунди, укључујући и те границе).</p>
 
-    </p></div></div>
+    </div></div>
 <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">naziv</span>
 <span class="k">FROM</span> <span class="n">kompozicija</span>
 <span class="k">WHERE</span> <span class="n">trajanje</span> <span class="k">BETWEEN</span> <span class="mi">180000</span> <span class="k">AND</span> <span class="mi">240000</span><span class="p">;</span>
@@ -501,15 +500,13 @@
 </tbody>
 </table>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Приказати све називе песама које почињу речју <cite>Love</cite>.</p>
 
-    </p></div></div>
+    </div></div>
 <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="o">*</span>
 <span class="k">FROM</span> <span class="n">kompozicija</span>
 <span class="k">WHERE</span> <span class="n">naziv</span> <span class="k">LIKE</span> <span class="s1">&#39;Love%&#39;</span><span class="p">;</span>
@@ -596,15 +593,13 @@
 </tbody>
 </table>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Приказати све жанрове чија имена садрже реч <cite>Rock</cite>.</p>
 
-    </p></div></div>
+    </div></div>
 <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="o">*</span>
 <span class="k">FROM</span> <span class="n">zanr</span>
 <span class="k">WHERE</span> <span class="n">naziv</span> <span class="k">LIKE</span> <span class="s1">&#39;%Rock%&#39;</span><span class="p">;</span>
@@ -631,16 +626,14 @@
 </tbody>
 </table>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Приказати све извођаче чија имена садрже реч <cite>Orchestra</cite> или
 <cite>Symphony</cite>.</p>
 
-    </p></div></div>
+    </div></div>
 <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="o">*</span>
 <span class="k">FROM</span> <span class="n">izvodjac</span>
 <span class="k">WHERE</span> <span class="n">naziv</span> <span class="k">LIKE</span> <span class="s1">&#39;%Orchestra%&#39;</span> <span class="k">OR</span> <span class="n">naziv</span> <span class="k">LIKE</span> <span class="s1">&#39;%Symphony%&#39;</span><span class="p">;</span>
@@ -679,16 +672,14 @@
 </tbody>
 </table>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Приказати све податке о композицијама које су краће од 10 минута
 (600000 милисекунди), а које коштају долар или више.</p>
 
-    </p></div></div>
+    </div></div>
 <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="o">*</span>
 <span class="k">FROM</span> <span class="n">kompozicija</span>
 <span class="k">WHERE</span> <span class="n">cena</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">.</span><span class="mi">00</span> <span class="k">AND</span> <span class="n">trajanje</span> <span class="o">&lt;</span> <span class="mi">600000</span><span class="p">;</span>
@@ -742,15 +733,13 @@
 <h2>Вежба<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>Покушај сада да самостално решиш наредних неколико задатака.</p>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Приказати називе свих композиција који на крају имају реч <em>you</em>.</p>
 
-    </p></div></div>
+    </div></div>
 
     <div id="db_operatori_zadaci_muzika_01" class="db" data-db-name="music.sql" db-check = "SELECT naziv
 FROM kompozicija
@@ -779,16 +768,14 @@ WHERE naziv LIKE '% you'"    db-show-result>
             
     </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Приказати имена и презимена и земљу свих купаца који се зову <em>Luis</em>
 а нису из Бразила.</p>
 
-    </p></div></div>
+    </div></div>
 
     <div id="db_operatori_zadaci_muzika_02" class="db" data-db-name="music.sql" db-check = "SELECT ime, prezime, drzava
 FROM kupac
@@ -817,16 +804,14 @@ WHERE ime = 'Luis' AND drzava != 'Brasil'"    db-show-result>
             
     </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Приказати имена, презимена и датуме рођења свих запослених који су
 рођени током 1970-их.</p>
 
-    </p></div></div>
+    </div></div>
 
     <div id="db_operatori_zadaci_muzika_03" class="db" data-db-name="music.sql" db-check = "SELECT ime, prezime, datum_rodjenja
 FROM zaposleni

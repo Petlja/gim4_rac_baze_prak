@@ -6,6 +6,7 @@
     <title>Изрази и функције - музика</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -27,6 +28,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
     <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
     <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
     <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
@@ -109,6 +111,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -124,6 +127,8 @@
     <script type="text/javascript" src="../_static/jszip.js"></script>
     <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/simanim.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
     <script type="text/javascript" src="../_static/dbDirective.js"></script>
     <script type="text/javascript" src="../_static/sql.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
@@ -324,15 +329,13 @@
 а за сваку табелу и тачни називи колона.</p>
 <a class="reference internal image-reference" href="../_images/music22.png"><img alt="../_images/music22.png" class="align-center" src="../_images/music22.png" style="width: 300px;" /></a>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Приказати називе свих песама које трају више од 4 и по минута.</p>
 
-    </p></div></div>
+    </div></div>
 <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">naziv</span>
 <span class="k">FROM</span> <span class="n">kompozicija</span>
 <span class="k">WHERE</span> <span class="n">trajanje</span> <span class="o">&gt;</span> <span class="mi">4</span><span class="p">.</span><span class="mi">5</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">;</span>
@@ -363,16 +366,14 @@
 </tbody>
 </table>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Приказати називе свих песама и њихову величину у мегабајтима
 заокружену на две децимале.</p>
 
-    </p></div></div>
+    </div></div>
 <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">naziv</span><span class="p">,</span> <span class="n">round</span><span class="p">(</span><span class="n">velicina</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1024</span> <span class="o">*</span> <span class="mi">1024</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span> <span class="k">AS</span> <span class="n">Mb</span>
 <span class="k">FROM</span> <span class="n">kompozicija</span><span class="p">;</span>
 </pre></div>
@@ -410,18 +411,16 @@
 </tbody>
 </table>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Приказати називе свих композиција, њихово трајање у секундама и
 ознаке да дужине. Кратке (<code class="docutils literal notranslate"><span class="pre">kratka</span></code>) су оне које су краће од три
 минута, средње (<code class="docutils literal notranslate"><span class="pre">srednja</span></code>) су оне између 3 и 6 минута, а дуге
 (<code class="docutils literal notranslate"><span class="pre">duga</span></code>) оне које су дуже од 6 минута).</p>
 
-    </p></div></div>
+    </div></div>
 <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">naziv</span><span class="p">,</span> <span class="n">round</span><span class="p">(</span><span class="n">trajanje</span> <span class="o">/</span> <span class="mi">1000</span><span class="p">)</span> <span class="k">AS</span> <span class="n">sekunde</span><span class="p">,</span>
        <span class="k">CASE</span>
           <span class="k">WHEN</span> <span class="n">trajanje</span> <span class="o">&lt;</span> <span class="mi">3</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">1000</span> <span class="k">THEN</span> <span class="s1">&#39;kratka&#39;</span>
@@ -472,16 +471,14 @@
 </tbody>
 </table>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>За сваку песму приказати идентификатор, назив и трајање у минутама
 и секундама.</p>
 
-    </p></div></div>
+    </div></div>
 <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">id_kompozicija</span><span class="p">,</span> <span class="n">naziv</span><span class="p">,</span>
        <span class="k">CAST</span> <span class="p">(</span><span class="n">round</span><span class="p">(</span><span class="n">trajanje</span> <span class="o">/</span> <span class="mi">1000</span><span class="p">)</span> <span class="k">AS</span> <span class="nb">INTEGER</span><span class="p">)</span> <span class="o">/</span> <span class="mi">60</span> <span class="k">AS</span> <span class="n">minuti</span><span class="p">,</span>
        <span class="k">CAST</span> <span class="p">(</span><span class="n">round</span><span class="p">(</span><span class="n">trajanje</span> <span class="o">/</span> <span class="mi">1000</span><span class="p">)</span> <span class="k">AS</span> <span class="nb">INTEGER</span><span class="p">)</span> <span class="o">%</span> <span class="mi">60</span> <span class="k">AS</span> <span class="n">sekunde</span>
@@ -540,17 +537,15 @@
 <h2>Вежба<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>Наредних неколико упита напиши самостално.</p>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>За сваку ставку наруџбенице прикажи идентификатор <em>id_naruzbenica</em>
 и укупну цену (она се добија множењем јединичне цене <em>cena</em> и
 количине <em>kolicina</em>). Укупну цену прикажи у колони <em>ukupna_cena</em>.</p>
 
-    </p></div></div>
+    </div></div>
 
     <div id="db_izrazi_zadaci_muzika_01" class="db" data-db-name="music.sql" db-check = "SELECT id_narudzbenica, kolicina * cena AS ukupna_cena
 FROM stavka_narudzbenice"  db-check-col-name  db-show-result> 
@@ -578,15 +573,13 @@ FROM stavka_narudzbenice"  db-check-col-name  db-show-result>
             
     </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Прикажи називе свих композиција које заузимају више од 10,5 мегабајта.</p>
 
-    </p></div></div>
+    </div></div>
 
     <div id="db_izrazi_zadaci_muzika_02" class="db" data-db-name="music.sql" db-check = "SELECT naziv
 FROM kompozicija
