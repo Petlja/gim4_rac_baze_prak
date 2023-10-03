@@ -2,9 +2,9 @@
 
 Ovaj repozitorijum posvećen je praktikumu koji je dodatak kursu Baze podataka za četvrti razred gimnazije. 
 
-Praktikum je na Petljom portalu dotupan ovde: [uskoro](https://petlja.org/)
+Praktikum je na Petljinom portalu dotupan ovde: [uskoro](https://petlja.org/)
 
-Praktikum možete itegrisati u svoj LMS koristeći SCORM pakete koji se mogu preuzeti sa: https://github.com/Petlja/gim4_rac_baze_pkrak/releases
+Praktikum možete integrisati u svoj LMS koristeći SCORM pakete koji se mogu preuzeti sa: https://github.com/Petlja/gim4_rac_baze_pkrak/releases
 
 ## Konverzija u *HTML*
 
